@@ -1,0 +1,27 @@
+# Virtual environment — never share this, it's tied to one machine
+.venv/
+venv/
+env/
+
+# Secrets — never commit real API keys
+.env
+backend/.env
+
+# Python bytecode/caches
+__pycache__/
+*.pyc
+*.pyo
+
+# Streamlit local secrets (if you ever use this instead of .env)
+.streamlit/secrets.toml
+
+# Local runtime data — regenerates on its own machine, may contain
+# registered users' hashed passwords / prediction history
+users.json
+backend/project_risk.db
+data/
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
